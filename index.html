@@ -1,48 +1,112 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Personal Web Page</title>
+  <meta charset="UTF-8">
+  <title>Basic HTML5 Lab</title>
+  <style>
+    span {
+      color: green;
+      font-weight: bold;
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Personal Website</h1>
-        <nav>
-            <a href="#main">Go to Main Content</a>
-        </nav>
-    </header>
 
-    <main id="main">
-        <section>
-            <h2>About Me</h2>
-            <p>I am a student passionate about technology and web development.</p>
-        </section>
+  <div id="header">
+    <h1>Welcome to the HTML5 Lab</h1>
+  </div>
 
-        <section>
-            <h2>My Hobbies</h2>
-            <ul>
-                <li>Web Development</li>
-                <li>Photography</li>
-                <li>Reading Books</li>
-            </ul>
-        </section>
+  <div id="main-content">
+    <h2>Lists</h2>
 
-        <section>
-            <h2>Photo Gallery</h2>
-            <img src="images/avatar1.jpg" alt="Photo 1" />
-            <img src="images/avatar2.jpg" alt="Photo 2" />
-            <img src="images/avatar3.jpg" alt="Photo 3" />
-        </section>
+    <h3>Ordered List of Programming Languages</h3>
+    <ol>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>C++</li>
+    </ol>
 
-        <section>
-            <h2>Useful Link</h2>
-            <p>Learn more at <a href="https://www.w3schools.com" target="_blank">W3Schools</a>.</p>
-        </section>
-    </main>
+    <h3>Unordered List of Web Browsers</h3>
+    <ul>
+      <li>Chrome</li>
+      <li>Firefox</li>
+      <li>Edge</li>
+    </ul>
 
-    <footer>
-        <p>© 2025 - Created by Me</p>
-    </footer>
+    <h2>Student Information Table</h2>
+    <table>
+      <tr>
+        <th>No</th>
+        <th>Full Name</th>
+        <th>Class</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Nguyen Van A</td>
+        <td>CS20</td>
+        <td>a@example.com</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Tran Thi B</td>
+        <td>CS20</td>
+        <td>b@example.com</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Le Van C</td>
+        <td>CS20</td>
+        <td>c@example.com</td>
+      </tr>
+    </table>
+
+    <h2>Highlights</h2>
+    <p>This lab helps you learn basic <span>HTML5</span> elements and create a simple web <span>form</span>.</p>
+
+    <h2>Image and Link</h2>
+    <img src="https://i.pinimg.com/736x/2e/68/0d/2e680d985d7778ea9d82eb18d4b42d2b.jpg" alt="HTML5 Logo" width="800">
+    <p>Visit <a href="https://www.w3schools.com" target="_blank">W3Schools</a> to learn more.</p>
+
+    <h2>Input Form</h2>
+    <form>
+      <label for="fullname">Full Name:</label><br>
+      <input type="text" id="fullname" name="fullname"><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password"><br><br>
+
+      Gender:<br>
+      <input type="radio" id="male" name="gender" value="Male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label><br><br>
+
+      Hobbies:<br>
+      <input type="checkbox" id="coding" name="hobby" value="Coding">
+      <label for="coding">Coding</label><br>
+      <input type="checkbox" id="design" name="hobby" value="Design">
+      <label for="design">Design</label><br>
+      <input type="checkbox" id="traveling" name="hobby" value="Traveling">
+      <label for="traveling">Traveling</label><br>
+      <input type="checkbox" id="gaming" name="hobby" value="Gaming">
+      <label for="gaming">Gaming</label><br><br>
+
+
+
+      <label for="notes">Notes:</label><br>
+      <textarea id="notes" name="notes" rows="4" cols="30"></textarea><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+
 </body>
 </html>
